@@ -34,12 +34,13 @@ public partial class SnackbarViewModel(ISnackbarService snackbarService) : ViewM
             "No Witcher's Ever Died In His Bed.",
             _snackbarAppearance,
             new SymbolIcon(SymbolRegular.Fluent24),
-            TimeSpan.FromSeconds(SnackbarTimeout)
+            TimeSpan.FromSeconds(SnackbarTimeout) //为_snackbarTimeout私有属性
         );
     }
 
     private void UpdateSnackbarAppearance(int appearanceIndex)
     {
+        //Snackbar外观
         _snackbarAppearance = appearanceIndex switch
         {
             1 => ControlAppearance.Secondary,
