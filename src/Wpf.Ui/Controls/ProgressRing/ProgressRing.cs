@@ -21,7 +21,7 @@ public class ProgressRing : System.Windows.Controls.Control
         nameof(Progress),
         typeof(double),
         typeof(ProgressRing),
-        new PropertyMetadata(50d, OnProgressChanged)
+        new PropertyMetadata(50.0d, OnProgressChanged)
     );
 
     /// <summary>Identifies the <see cref="IsIndeterminate"/> dependency property.</summary>
