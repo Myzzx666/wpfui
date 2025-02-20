@@ -55,10 +55,15 @@ public class Arc : Shape
     static Arc()
     {
         // Modify the metadata of the StrokeStartLineCap dependency property.
-        StrokeStartLineCapProperty.OverrideMetadata(
-            typeof(Arc),
-            new PropertyMetadata(PenLineCap.Round, PropertyChangedCallback)
-        );
+        // 重写StrokeStartLineCapProperty依赖属性的元数据
+        //typeof(PenLineCap), typeof(Shape)
+        // StrokeStartLineCapProperty 是Shape抽象类的依赖属性
+        //StrokeStartLineCapProperty.OverrideMetadata(
+        //    typeof(Arc),
+        //    // Shape类
+        //    // 设置默认值
+        //    new PropertyMetadata(PenLineCap.Round, PropertyChangedCallback)
+        //);
     }
 
     /// <summary>
@@ -189,6 +194,7 @@ public class Arc : Shape
     {
         if (d is not Arc control)
         {
+            // 不是Arc(Shape)类型
             return;
         }
 
