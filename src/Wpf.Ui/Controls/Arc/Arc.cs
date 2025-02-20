@@ -64,6 +64,18 @@ public class Arc : Shape
         //    // 设置默认值
         //    new PropertyMetadata(PenLineCap.Round, PropertyChangedCallback)
         //);
+
+        //Sample:
+        // Create a new metadata instance with a modified default value.
+        //FrameworkPropertyMetadata newPropertyMetadata = new(
+        //    defaultValue: new Uri("http://www.contoso.com/tropical-aquarium-graphic.jpg"));
+
+        // Call OverrideMetadata on the dependency property identifier.
+        // Pass in the type for which the new metadata will be applied
+        // and the new metadata instance.
+        //AquariumGraphicProperty.OverrideMetadata(
+        //    forType: typeof(TropicalAquarium),
+        //    typeMetadata: newPropertyMetadata);
     }
 
     /// <summary>
