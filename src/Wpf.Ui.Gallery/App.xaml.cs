@@ -54,6 +54,7 @@ public partial class App
 
                 // All other pages and view models
                 _ = services.AddTransientFromNamespace("Wpf.Ui.Gallery.Views", GalleryAssembly.Asssembly);
+                // 其他Views 和 ViewModels依赖注入对应页面
                 _ = services.AddTransientFromNamespace(
                     "Wpf.Ui.Gallery.ViewModels",
                     GalleryAssembly.Asssembly

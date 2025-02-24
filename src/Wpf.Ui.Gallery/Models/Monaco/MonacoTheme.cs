@@ -5,6 +5,7 @@
 
 namespace Wpf.Ui.Gallery.Models.Monaco;
 
+// 可以进行XML、JSON序列化
 [Serializable]
 public record MonacoTheme
 {
