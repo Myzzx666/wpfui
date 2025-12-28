@@ -152,6 +152,8 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
                             Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            RecognizesAccessKey="True"
                             TextElement.FontSize="14"
                             TextElement.Foreground="{TemplateBinding Foreground}" />
                         <Grid
@@ -278,6 +280,8 @@
                                                         HorizontalAlignment="Stretch"
                                                         VerticalAlignment="Center"
                                                         Content="{TemplateBinding Content}"
+                                                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                        RecognizesAccessKey="True"
                                                         TextElement.FontSize="14"
                                                         TextElement.Foreground="{DynamicResource NavigationViewItemForeground}" />
                                                 </Grid>
